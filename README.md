@@ -151,5 +151,5 @@ Fri Apr 12 15:40:11 2024
 # 启动app应用，并测试
 ```
 python application/app.py
-
 ```
+![](./pics/app.png)
