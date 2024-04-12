@@ -152,4 +152,4 @@ Fri Apr 12 15:40:11 2024
 ```
 python application/app.py
 ```
-![](./pics/app.png)
+![](./pics/app2.png)
