@@ -5,7 +5,7 @@ python train.py
 
 # 模型数据格式转换
 ```
-torch-model-archiver --model-name mnist --version 1.0 --model-file model.py --serialized-file mnist_cnn.pt --handler handler.py --export-path /data/output/
+torch-model-archiver --model-name mnist --version 1.0 --model-file model.py --serialized-file model.pt --handler handler.py --export-path /data/output/
 
 # 存储到/data/output目录下
 ```
@@ -117,6 +117,12 @@ curl "http://localhost:3001/models"
     ]
   }
 ]
+```
+
+## 测试请求模型的推理服务
+```
+(base) [root@host-135 sample_data]# curl http://localhost:3000/predictions/mnist -T /data/workspace/torchserve_mnist/sample_data/img_1.jpg
+9(base) [root@host-135 sample_data]# 
 ```
 
 ## 监控显卡使用情况
